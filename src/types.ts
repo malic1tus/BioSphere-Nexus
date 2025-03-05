@@ -8,6 +8,13 @@ export interface SimulationParams {
   vaccinationRate: number;
 }
 
+export interface DiseaseProfile {
+  name: string;
+  description: string;
+  params: SimulationParams;
+  source: string;
+}
+
 export interface SimulationData {
   susceptible: number;
   infected: number;
